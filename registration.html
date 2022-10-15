@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    .reg-header {
+        background-color: #88B04B;
+        padding: 20px;
+        font-size: 1.4em;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 2px;
+        display: inline-block;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #EBF0F5;
+        padding: 40px 0;
+    }
+
+    .reg-container {
+  background: #ebebeb;
+  padding: 40px 0;
+}
+
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    .col-35 {
+        float: left;
+        width: 37.5%;
+        margin-top: 6px;
+    }
+
+    #colorpicker {
+        float: left;
+        width: 37.5%;
+        margin-top: 6px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .col-25,
+        .col-75,
+        .col-35 {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .registerbtn {
+            width: 100%;
+        }
+    }
+
+    .login {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+
+    p {
+        font: Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    a {
+        color: dodgerblue;
+    }
+
+    .registerbtn {
+        background-color: #88B04B;
+        color: white;
+        padding: 12px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+        <center>
+            <h1 class="reg-header">Registration Form</h1>
+        </center>
+        <form action="success-page.html">
+            <div class="reg-container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name"><b>Name</b></label>
+                    </div>
+                    <div class="col-35">
+                        <input type="text" placeholder="First" name="fname" required>
+                    </div>
+                    <div class="col-35">
+                        <input type="text" placeholder="Last" name="lname" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="number"><b>Phone Number</b></label>
+                    </div>
+                    <div class="col-35">
+                        <input type="text" name="country code" value="+234" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email"><b>Email address</b></label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type="text" placeholder="email address" name="email" required>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="gender"><b>Gender</b></label> <br />
+                    </div>
+                    <div class="col-75">
+                        <select id="genderselect" name="genderselect">
+                            <option value="default" selected="selected">I am...</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="color"><b>Favourite Color</b></label>
+                    </div>
+
+                    <div class="col-35">
+                        <input type="color" id="colorpicker" value="#0000ff">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="birthday"><b>Date of Birth</b></label> <br />
+                    </div>
+                    <div class="col-25">
+                        <select id="month" name="month">
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar">March</option>
+                        </select>
+                    </div>
+                    <div class="col-25">
+                        <select id="days" name="days">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                        </select>
+                    </div>
+                    <div class="col-25">
+                        <select id="year" name="year">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+
+
+
+
+                    <div class="row" align="right">
+                        <button type="submit" class="registerbtn"><strong>Register</strong></button>
+                    </div>
+
+                </div>
+            </div>
+    <div class="container login">
+        <p>Already haave an account? <a href="login-page.html">Login</a>.</p>
+    </div>
+</body>
+
+</html>

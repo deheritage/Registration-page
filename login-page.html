@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .login-header {
+        background-color: #88B04B;
+        padding: 20px;
+        font-size: 1.4em;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        height: 60px;
+    }
+
+    .login-container {
+        background: #ebebeb;
+        padding: 40px 0;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 2px;
+        display: inline-block;
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    input[type="submit"] {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        background-color: #3a3a3a;
+        cursor: pointer;
+        outline: none;
+        float: right;
+        margin-top: 30px;
+
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 6px;
+
+        }
+
+</style>
+
+
+<body>
+    <div class="login-header">
+        <center>
+            <h1>Login</h1>
+        </center>
+    </div>
+
+    <form action="success-page.html">
+        <div class="login-container">
+            <div class="row">
+                <div class="col-25">
+                    <label for="email"><b>Email Address</b></label>
+                </div>
+                <div class="col-35">
+                    <input type="text" placeholder="" name="fname" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pswd"><b>Password</b></label>
+                </div>
+                <div class="col-35"> <input type="text" placeholder="" name="pswd" required>
+                </div>
+                <div class="btn-container">
+                    <input type="submit" value="Log in">
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
